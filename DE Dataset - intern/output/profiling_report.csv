@@ -1,0 +1,45 @@
+table,column,dtype,num_rows,null_count,distinct_count
+lead_logs,id,int64,8,0,8
+lead_logs,lead_id,object,8,0,5
+lead_logs,source_category,object,8,0,2
+lead_logs,created_at,object,8,0,5
+lead_logs,preferred_location,object,8,0,3
+lead_logs,timezone_location,object,8,0,1
+lead_logs,current_status,object,8,0,5
+paid_transactions,transaction_id,object,14,0,14
+paid_transactions,transaction_status,object,14,0,1
+paid_transactions,transaction_at,"datetime64[ns, UTC]",14,0,14
+paid_transactions,transaction_location,object,14,0,6
+paid_transactions,timezone_transaction,object,14,0,2
+paid_transactions,transaction_type,object,14,0,2
+referral_rewards,id,int64,3,0,3
+referral_rewards,reward_value,object,3,0,3
+referral_rewards,created_at,object,3,0,3
+referral_rewards,reward_type,int64,3,0,1
+user_logs,id,int64,29,0,29
+user_logs,user_id,object,29,0,9
+user_logs,name,object,29,0,7
+user_logs,phone_number,object,29,0,9
+user_logs,homeclub,object,29,0,6
+user_logs,timezone_homeclub,object,29,0,2
+user_logs,membership_expired_date,datetime64[ns],29,0,9
+user_logs,is_deleted,bool,29,0,2
+user_referral_logs,id,int64,96,0,96
+user_referral_logs,user_referral_id,object,96,0,78
+user_referral_logs,source_transaction_id,object,96,79,17
+user_referral_logs,created_at,"datetime64[ns, UTC]",96,0,96
+user_referral_logs,is_reward_granted,bool,96,0,2
+user_referral_statuses,id,int64,3,0,3
+user_referral_statuses,description,object,3,0,3
+user_referral_statuses,created_at,object,3,0,2
+user_referrals,referral_at,"datetime64[ns, UTC]",46,0,44
+user_referrals,referral_id,object,46,0,46
+user_referrals,referee_id,object,46,3,37
+user_referrals,referee_name,object,46,3,35
+user_referrals,referee_phone,object,46,0,33
+user_referrals,referral_reward_id,float64,46,38,3
+user_referrals,referral_source,object,46,0,3
+user_referrals,referrer_id,object,46,13,13
+user_referrals,transaction_id,object,46,13,27
+user_referrals,updated_at,"datetime64[ns, UTC]",46,0,40
+user_referrals,user_referral_status_id,int64,46,0,3
